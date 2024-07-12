@@ -26,7 +26,8 @@
   "scripts": {
     "dev": "",
     "test": "",
-    "start": "DEBUG=@neo4j/graphql:auth node src/endpoint.mjs"
+    "start": "DEBUG=@neo4j/graphql:auth node src/endpoint.mjs",
+    "convert": "node src/convert.mjs"
   },
   "dependencies": {
     "@apollo/server": "^4.10.4",
@@ -34,5 +35,9 @@
     "@neo4j/graphql-ogm": "^5.5.0",
     "graphql": "^16.9.0",
     "neo4j-driver": "^5.22.0"
+  },
+  "devDependencies": {
+    "@panva/hkdf": "^1.2.1",
+    "jose": "^5.6.3"
   }
 }
